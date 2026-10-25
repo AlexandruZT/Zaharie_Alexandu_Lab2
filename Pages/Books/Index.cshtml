@@ -32,7 +32,8 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Book) {
+        @foreach (var item in Model.BookD.Books)
+        {
         <tr>
             <td>
                 @Html.DisplayFor(model => item.Title)
