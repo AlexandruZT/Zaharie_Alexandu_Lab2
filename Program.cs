@@ -8,7 +8,13 @@ builder.Services.AddDbContext<Zaharie_Alexandu_Lab2Context>(options => options.U
 // Add services to the container.
 builder.Services.AddRazorPages();
 
+var culture = new System.Globalization.CultureInfo("en-US");
+System.Globalization.CultureInfo.DefaultThreadCurrentCulture = culture;
+System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = culture;
+
 var app = builder.Build();
+
+app.UseRequestLocalization("en-US");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
