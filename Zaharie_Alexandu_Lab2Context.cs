@@ -13,4 +13,6 @@ public class Zaharie_Alexandu_Lab2Context : DbContext
     public DbSet<Author> Author { get; set; } = default!;
     public DbSet<Category> Category { get; set; } = default!;
     public DbSet<BookCategory> BookCategory { get; set; } = default!;
+    public DbSet<Member> Member { get; set; } = default!;
+    public DbSet<Borrowing> Borrowing { get; set; } = default!;
 }
